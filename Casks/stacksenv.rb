@@ -39,5 +39,14 @@ cask "stacksenv" do
     end
   end
 
+
+
+  def install
+    bin.install "stacksenv"
+  end
+
+  test do
+    system "#{bin}/stacksenv", "--version"
+  end
   # No zap stanza required
 end
