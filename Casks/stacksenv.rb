@@ -9,8 +9,6 @@ cask "stacksenv" do
     skip "Auto-generated on release."
   end
 
-  binary "stacksenv"
-
   on_macos do
     on_intel do
       url "https://github.com/stacksenv/cli/releases/download/v#{version}/darwin-amd64-stacksenv.tar.gz"
