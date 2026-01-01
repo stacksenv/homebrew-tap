@@ -2,9 +2,9 @@
 cask "stacksenv" do
   version "1.0.12"
 
+  name "stacksenv"
   desc "CLI for managing your Environment Variables"
   homepage "https://github.com/stacksenv/cli"
-  name "stacksenv"
 
   livecheck do
     skip "Auto-generated on release."
