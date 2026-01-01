@@ -3,7 +3,7 @@ cask "stacksenv" do
   name "stacksenv"
   desc "Stacksenv is a CLI for managing your Environment Variables"
   homepage "https://github.com/stacksenv/cli"
-  version "1.0.13"
+  version "1.0.14"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "stacksenv" do
   on_macos do
     on_intel do
       url "https://github.com/stacksenv/cli/releases/download/v#{version}/darwin-amd64-stacksenv.tar.gz"
-      sha256 "212c6fa4889078d5cad591aea2d7d8c81d18d44bd2c30e03254e72a8233cc6a2"
+      sha256 "a71d7c76a280bd624592cea5a89ddd8a25f81038a140a50065f7e5a45c440604"
     end
     on_arm do
       url "https://github.com/stacksenv/cli/releases/download/v#{version}/darwin-arm64-stacksenv.tar.gz"
-      sha256 "5fe1ede0eab3a26f4968026e5863c85282525d16b5a0af9f8c55d29e96931226"
+      sha256 "0b1ed94db256fe2a3e4709ab0a1425c1554272e4d66fb0a1e248b41231edd37b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/stacksenv/cli/releases/download/v#{version}/linux-amd64-stacksenv.tar.gz"
-      sha256 "cc966ddfd59945dbe00df0e1b6058842503f15195c8f33956fcfd457a2468f06"
+      sha256 "bedb487de7ce7b3e7997d15a8343e60eb08f1677c86573950192a844e4c552ff"
     end
     on_arm do
       url "https://github.com/stacksenv/cli/releases/download/v#{version}/linux-arm64-stacksenv.tar.gz"
-      sha256 "c38c8d458f73dd2ea42074ad23e214cf25dfbef1fb1b2cff0d784dc43c10cfc0"
+      sha256 "af0439e366eac2a6839203e0143d99748d75ba90ac2daf8c2be89cc641f686de"
     end
   end
 
