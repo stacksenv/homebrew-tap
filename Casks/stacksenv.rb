@@ -5,6 +5,10 @@ cask "stacksenv" do
   desc "CLI for managing your Environment Variables"
   homepage "https://github.com/stacksenv/cli"
 
+  livecheck do
+    skip "Auto-generated on release."
+  end
+
   on_macos do
     on_intel do
       url "https://github.com/stacksenv/cli/releases/download/v#{version}/darwin-amd64-stacksenv.tar.gz"
@@ -28,10 +32,6 @@ cask "stacksenv" do
   end
 
   binary "stacksenv"
-
-  livecheck do
-    skip "Auto-generated on release."
-  end
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status.zero?
